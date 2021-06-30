@@ -16,12 +16,12 @@ commands eg. by cronjob.
 `scd [device] [bitrate] [delay in ms] ['command']`
 
 #### example: 
-`scd /dev/ttyACM0 921600 20 'radio on\r\n' # turns radio on`  
-`scd /dev/ttyACM0 921600 20 'status\r\n' # shows status page`  
-`scd /dev/ttyACM0 921600 20 '\03' # send CTRL-C to stop status page`  
+`scd /dev/ttyACM0 921600 20 'radio on\r\n'` # turns radio on  
+`scd /dev/ttyACM0 921600 20 'status\r\n'` # shows status page  
+`scd /dev/ttyACM0 921600 20 '\03'` # send CTRL-C to stop status page  
 
 #### remarks:
 scd displays received serial answers after timeout.
 
-`'\r\n' -> CR, Linefeed is required to finish command.`  
-`'\03' is the character to send for a CTRL-C`  
+`'\r\n'` CR, Linefeed is required to finish command.  
+`'\03'` is the character to send for a CTRL-C  
